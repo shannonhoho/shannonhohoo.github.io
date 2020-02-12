@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Project: Blog</title>
+        <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Staatliches&display=swap" rel="stylesheet">
+		<style>
+        	body{
+            	background-color: #eeeeee;
+                margin: 0;
+            }
+			h1, h2, h3, h4{
+                font-family: 'Staatliches', cursive;
+                text-align: center;
+                margin: 0;
+            }
+            .header{
+                padding: 20px;
+  				text-align: center;
+  				background: #c9d3ff;
+  				color: white;
+  				font-size: 100px;
+            }
+            dt{
+                float: left;
+                font-size: 18px;
+            }
+            dt a{
+                display: block;
+                color: white;
+                padding: 2px 50px;
+                text-decoration: none;
+            }
+            dt a:hover{
+                background-color: #e0cee0;
+                }
+            p, li, ul, dl, table{
+               font-family: 'Big Shoulders Text', cursive;
+               text-align: center;
+            }
+            h1{
+                font-size: 100px;
+            }
+            h2{
+            	font-size: 50px;
+            }
+            h3{
+            	font-size: 40px;
+            }
+            #nav{
+                list-style-type: none;
+                margin-top: 0;
+                padding: 0;
+                float: center;
+                overflow: hidden;
+                background-color: #c2bec2;
+                padding-left: 270px;
+                padding-right: 270px; 
+			}
+			.menuitem{
+  				display: none;
+				position: absolute;
+  				background-color: #c2bec2;
+			}
+			.menuitem a{
+  				color: white;
+  				padding: 2px 73px;
+  				text-decoration: none;
+  				display: block;
+  				font-family: 'Big Shoulders Text', cursive;
+			}
+			.menu:hover .menuitem{
+  				display: block;
+			}
+            p, img{ 
+            	padding-left: 60px;
+                padding-right: 60px;
+            }
+            a{
+            	text-decoration: none;
+                color: black;
+            }
+            p{
+            	font-size: 20px;
+            }
+            table{
+                border-collapse: collapse;
+                border: 1px solid black;
+            } 
+            th,td{
+                border: 1px solid black;
+            }
+            tr:hover{background-color: #ffffff;}
+            strong:hover{background-color: #ffffff;}
+            p:hover{background-color: #ffffff;}
+            .table{
+            	margin-left:auto; 
+   				margin-right:auto;
+            }
+		</style>
+</head>
+	<body>
+  		<header><a href="page1.html"> <h1 class="header">Anime Blog</h1> </a></header>
+		<dl id="nav">
+                <dt id="top"><a href="page1.html">Home</a></dt>
+                <dt><a href="page2.html">Anime of the Decade</a></dt>
+                <dt class="menu">
+                	<a>Analysis + Research</a>
+                	 <div class="menuitem">
+                	 	<a href="page3.html">Clannad</a>
+      					<a href="page4.html">Angel Beats</a>
+      					<a href="page5.html">Chuunibyou</a>
+                	 </div>
+                </dt>
+                <dt> <a href="page6.html">Upcoming Anime</a></dt>
+            </dl>
+		<table class="table">
+             <tr>
+                <th>Websites</th>
+                <th>Link</th>
+             </tr>
+			<tbody>
+                <tr>
+                    <td>AniChart</td>
+                    <td>
+                    <a href="https://anichart.net/">
+                    <img src="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/dr0yoahb1amwpmcobijd" alt="anichart" width="200">
+                    </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Anime TimeTable</td>
+                    <td>
+                    <a href="https://www.livechart.me/timetable">
+                    <img src="https://s.livechart.me/assets/social-media-1a2d9ecfca58a912bdbbd02849b1300297d9124fe8c321bba61c6ef666d88923.png" alt="tt" width="200">
+                    </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Crunchyroll</td>
+                    <td>
+                    <a href="https://www.crunchyroll.com/">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTqWU8ixvXbI6gxUQvNN4T1faAsqYhXSEiaJafFNPxDZfRA_a0" alt="croll" width="200">
+                    </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Funimation</td>
+                    <td>
+                    <a href="https://www.funimation.com/">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQM0n_7vxlMje0jUBP0R7fmClfBo2-YfSJUXdhTRb9ZC4q3ZMzh" alt="fun" width="200">
+                    </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+            <h4><em>Back Up: <a href="#top"> CLICK</a></em></h4>
+    </body>
+</html>
