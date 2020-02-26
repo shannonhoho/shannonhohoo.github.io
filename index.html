@@ -1,147 +1,137 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Project: Blog</title>
-        <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Staatliches&display=swap" rel="stylesheet">
+		<title>Final Project: Invitation</title>
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Great+Vibes|Playfair+Display&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
-/* Style the body */			
+/* Style the body */
         	body{
-            	background-color: #eeeeee;
-                margin: 0;
+                background-color: #ffecd9;
             }
-/* Style headers */
-			h1, h2, h3, h4, h5{
-                font-family: 'Staatliches', cursive;
-                text-align: center;
-                margin: 0;
-            }
-/* styling header and creating the purple bar */
-            .header{
-                padding: 20px;
-  				text-align: center;
-  				background: #c9d3ff;
-  				color: white;
-  				font-size: 100px;
-            }
-/* styling list */
-            dt{
-                float: left;
-                font-size: 18px;
-            }
-            dt a{
-                display: block;
-                color: white;
-                padding: 2px 50px;
-                text-decoration: none;
-            }
-/* creating a hover option */
-            dt a:hover{
-                background-color: #e0cee0;
-                }
-/* more fonts */
-            p, li, ul, dl, table{
-               font-family: 'Big Shoulders Text', cursive;
-               text-align: center;
-            }
-/* font size/color for headers */
             h1{
-                font-size: 100px;
-            }
-            h2{
-            	font-size: 50px;
-            }
-            h3{
-            	font-size: 40px;
-            }
-            h5{
-            	color: #808080;
-            }
-/* create bar for dropdown */
-            #nav{
-                list-style-type: none;
+  				position: relative;
+                text-align: center;
+                font-family: 'Playfair Display';
+                font-size: 60px;
+                text-decoration: none;
+                margin: 0;
+                padding: 20px;
+             }
+              h2{
+             	text-align: center;
+                color: #fcb2a9;
+             	font-family: 'Great Vibes';
+                font-size: 40px;
+                width: 100%;
+                text-decoration: underline overline;
+             }
+             .box{
+   				display: flex;
+   				align-items:center;
+			}
+            .logo{ 
+            	padding: 20px;
                 margin-top: 0;
                 padding: 0;
-                float: center;
-                overflow: hidden;
-                background-color: #c2bec2;
-                padding-left: 270px;
-                padding-right: 270px; 
+            }
+            ul{
+  				list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+  				background-color: #fcb2a9;
+                text-align: center;
+                display: flex;
+    			justify-content: center;
+                font-family: 'Playfair Display';
 			}
-/* create the dropdown bar */
-			.menuitem{
-  				display: none;
-				position: absolute;
-  				background-color: #c2bec2;
+			li{
+  				float: left;
 			}
-/* make the dropdown bar content */
-			.menuitem a{
+			li a, .navbtn{
+  				display: inline-block;
   				color: white;
-  				padding: 2px 73px;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+			li a:hover, .nav:hover .navbtn{
+  				background-color: #ecd7d0;
+			}
+			li.nav{
+  				display: inline-block;
+			}
+			.navbar{
+  				display: none;
+  				position: absolute;
+  				background-color: #fcb2a0;
+            }
+			.navbar a{
+  				color: white;
+  				padding: 12px 12px;
   				text-decoration: none;
   				display: block;
-  				font-family: 'Big Shoulders Text', cursive;
+  				text-align: left;
 			}
-/* create a hover thing, so it highlights */
-			.menu:hover .menuitem{
+			.nav:hover .navbar{
   				display: block;
 			}
-/* padding for images */
-            p, img{ 
-            	padding-left: 60px;
-                padding-right: 60px;
+            footer{
+            	display: block;
+            	background-color: #fcb2a9;
             }
-/* making the links not have underlines */
-            a{
+            h1 a{
             	text-decoration: none;
-                color: black;
+                color: white;
             }
-/* paragraph font size */
-            p{
-            	font-size: 20px;
-            }
+            h4{
+             	font-family: 'EB Garamond', ;
+                text-align: center; 
+                color: #5e6572;
+                margin: 0;
+             }
 		</style>
-</head>
-	<body>
-    	<header><a href="page1.html">
-  		<h1 class="header">Anime Blog</h1>
-        </a></header>
-		<dl id="nav">
-                <dt id="top"><a href="page1.html">Home</a></dt>
-                <dt><a href="page2.html">Anime of the Decade</a></dt>
-                <dt class="menu">
-                	<a>Analysis + Research</a>
-                	 <div class="menuitem">
-                	 	<a href="page3.html">Clannad</a>
-      					<a href="page4.html">Angel Beats</a>
-      					<a href="page5.html">Chuunibyou</a>
-                	 </div>
-                </dt>
-                <dt> <a href="page6.html">Upcoming Anime</a></dt>
-            </dl>
-        <a href="page2.html">
-        	<img src="https://assets-prd.ignimgs.com/2019/12/31/bestofthedecade-anime-thumb-1577825908934.jpg" alt="topten" width="1200">
-			<h2>Best Anime of the Decade</h2>
-        </a>	
-    		<p>Every year we're treated to a swath of <em>great</em> anime series; from shoujo that pull at heartstrings, to intense shonen staples that always promise excellent action, there are so many different kinds of anime to look forward to. In the past decade, we've seen anime continue through its moe phase and bring forth tons of new isekai.</p>
-            <p>This list...<em><a href="page2.html">read more</a></em></p>
-            <a href="page3.html">
-        	<img src="https://c.wallhere.com/photos/c4/14/1384x880_px_Clannad_Clannad_After_Story_Okazaki_Nagisa_Okazaki_Tomoya_Okazaki_Ushio-1503803.jpg!d" alt="clannad" width="1200">
-			<h2>Analysis of Clannad</h2>
-        </a>	
-    		<p>For this post, I am going to write about one of my all time favorites: Clannad. I am going to focus on  the show’s main character Tomoya and his journey through both Clannad and Clannad After Story.</p>
-            <p>WARNING THIS POST WILL CONTAIN MAJOR SPOILERS!<em><a href="page3.html">...read more</a></em></p>
-            <a href="page4.html">
-        	<img src="https://wallpapercave.com/wp/wp1835986.png" alt="angelbeats" width="1200">
-			<h2>Analysis of Angel Beats</h2>
-        </a>	
-    		<p>For this post, I decided to write about one of my all-time favorite anime series. Ever. Angel Beats.</p>
-            <p>WARNING THIS POST WILL CONTAIN MAJOR SPOILERS!<em><a href="page4.html">...read more</a></em></p>
-            <a href="page5.html">
-        	<img src="https://c4.wallpaperflare.com/wallpaper/99/76/842/chuunibyou-demo-koi-ga-shitai-takanashi-rikka-togashi-yuuta-dekomori-sanae-wallpaper-preview.jpg" alt="chuu" width="1200">
-			<h2>Analysis of Chuunibyou</h2>
-        </a>	
-    		<p>For this post, I am going to take a slightly different approach and analyze my favorite anime of all time: Love, Chuunibyou, And Other Delusions (Chuunibyou Demo Koi Ga Shitai) on the topic of delusions.</p>
-            <p>WARNING THIS POST WILL CONTAIN MAJOR SPOILERS!<em><a href="page5.html">...read more</a></em></p>
-            <h4><em>Back Up: <a href="#top"> CLICK</a></em></h4>
-    </body>
+	</head>
+<body>
+<header id="top">
+<h1><a href="home.html">~ERICA & SUHO~</a></h1>
+<h4>February 21, 2021</h4>
+</header>
+<ul>
+  <li class="nav">
+    <a class="navbtn">Our Wedding</a>
+    <div class="navbar">
+      <a href="story.html">Our Story</a>
+      <a href="wedinfo.html">The Wedding</a>
+      <a href="party.html">Wedding Party</a>
+    </div>
+  </li>
+  <li class="nav"><a href="sch.html">Schedule</a></li>
+  <li class="nav">
+    <a class="navbtn">Details</a>
+    <div class="navbar">
+      <a href="things.html">Things to Do</a>
+    </div>
+  </li>
+  <li class="nav">
+    <a class="navbtn">Photos</a>
+    <div class="navbar">
+      <a href="ephotos.html">Engagment Photos</a>
+    </div>
+  </li>
+  <li><a href="rsvp.html">RSVP</a></li>
+</ul>
+<div class="logo">
+<a href="rsvp.html">
+    <img src="https://i.imgur.com/VzoezLi.png" alt="es" width="100%;"
+  height= "auto;">
+</a>
+</div>
+<footer>
+<h1><a href="#top">E | S</a></h1>
+</footer>
+</body>
 </html>
